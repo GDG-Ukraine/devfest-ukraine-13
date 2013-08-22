@@ -6817,6 +6817,14 @@ td.visible-print {
 }
 
 /*My*/
+footer {
+	margin-top: 60px;	
+}
+
+h4 {
+	font-weight: 600;
+	font-size: 1.125em;
+}
 @media (max-width: 767px) {
 	.navbar-inverse .navbar-nav > li > a:hover,
 	.navbar-inverse .navbar-nav > li > a:focus {

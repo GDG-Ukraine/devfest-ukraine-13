@@ -3,7 +3,6 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-bottom: 40px;
   color: #5a5a5a;
 }
 
@@ -101,8 +100,57 @@ body {
 	width: 185px;
 	margin: 40px 0;
 }
+
 .patners-row {
 	margin: 40px 0;
+}
+
+.google-line {
+	margin: -4px 80px 0 0;
+}
+
+.footer-top {
+	padding: 20px 0;
+	background-color: #F9F9F9;
+	border-top: 1px solid #F5F5F5; 
+}
+
+.footer-top ul {
+	padding: 0;
+}
+
+.footer-top ul  li {
+	list-style-type:none
+}
+
+.footer-top ul li a{
+	padding: 0;
+	display: block;
+	font-size: 0.9375em;
+	color: #245dc1;
+}
+
+.footer-bottom {
+  padding: 3px 0;
+  font-size: 0.875em;
+  background-color: #F5F5F5;
+  border-top: 1px solid #EEE;
+}
+
+.footer-bottom a {
+	color: #245dc1;
+}
+
+.footer-bottom a:hover {
+	text-decoration: none;
+}
+
+.footer-bottom img {
+	margin: 11px 5px;
+}
+
+.footer-bottom p {
+	margin: 15px 0;
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
