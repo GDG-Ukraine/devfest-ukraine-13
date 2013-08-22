@@ -86,8 +86,24 @@ body {
   letter-spacing: -1px;
 }
 
+/* My changes
+------------------------- */
+.partners {
+	margin: 10px 0;
+}
 
+.patners-text {
+	 text-align: center;
+	margin-bottom: 30px;
+	}
 
+.patners-divider {
+	width: 185px;
+	margin: 40px 0;
+}
+.patners-row {
+	margin: 40px 0;
+}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -125,4 +141,10 @@ body {
   .featurette-heading {
     margin-top: 120px;
   }
+	
+  .patners-text {
+	 text-align: right;
+	}
 }
+
+
