@@ -160,13 +160,8 @@ body {
 	font-weight: 300;
 }
 
-.speakers {
-	float: none;
-	margin: -10px auto 0;
-}
-
 .speakers > div{
-	margin-top: 40px;
+	margin: 40px 0 60px;
 }
 
 .speaker-text {
@@ -181,14 +176,15 @@ body {
 @media (max-width: 480px) {
 	.speakers img {
 		width: 80px;
-		
+/*
 		float: none;
 		left: 50%;
+*/
 	}
 	.speaker-text {
 		display: block;
-		clear: both;
-		margin-left: 0;
+/*		clear: both;*/
+		margin-left: 90px;
 	}
 }
 
