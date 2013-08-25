@@ -1,7 +1,6 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-
 body {
   color: #5a5a5a;
 }
@@ -87,6 +86,10 @@ body {
 
 /* My changes
 ------------------------- */
+.navbar-brand img {
+	max-width: 180px;
+}
+
 .partners {
 	margin: 10px 0;
 }
@@ -158,6 +161,10 @@ body {
 .footer-bottom p {
 	margin: 15px 0;
 	font-weight: 300;
+}
+
+.social img {
+	width: 32px;
 }
 
 .speakers > div{
