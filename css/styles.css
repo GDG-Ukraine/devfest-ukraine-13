@@ -94,7 +94,7 @@ body {
 .patners-text {
 	 text-align: center;
 	margin-bottom: 30px;
-	}
+}
 
 .patners-divider {
 	width: 185px;
@@ -273,12 +273,12 @@ h2.day:nth-child(3) {
     margin: 0 0 15px 25%;
     background: #3594cb;
     color: #fff;
-    padding: 2em;
+    padding: 1.5em;
     font-size: 1.2em;
     font-weight: 300;
     line-height: 1.4;
     position: relative;
-    border-radius: 5px;
+    border-radius: 3px;
 }
  
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
@@ -313,17 +313,7 @@ h2.day:nth-child(3) {
 .cbp_tmtimeline > li .cbp_tmicon {
     width: 40px;
     height: 40px;
-    font-family: 'ecoico';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    font-size: 1.4em;
-    line-height: 40px;
-    -webkit-font-smoothing: antialiased;
     position: absolute;
-    color: #fff;
     background: #46a4da;
     border-radius: 50%;
     box-shadow: 0 0 0 8px #afdcf8;
@@ -332,7 +322,16 @@ h2.day:nth-child(3) {
     top: 0;
     margin: 0 0 0 -25px;
 }
- 
+
+.cbp_tmlabel img {
+	width: 35px;
+	margin-right: 10px;
+}
+
+.cbp_tmlabel a {
+	color: inherit;
+}
+
 /* Example Media Queries */
 @media screen and (max-width: 65.375em) {
  
@@ -384,7 +383,75 @@ h2.day:nth-child(3) {
     }   
 }
 
-/* SPEAKERS SECTION
+/* LOCATION SECTION
+-------------------------------------------------- */
+.google_map {
+	display: block;
+	background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=570x300&zoom=15&maptype=roadmap&markers=color:red%7Cвул.+Червоноармійська,+55,+Київ&sensor=false&visual_refresh=true");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	line-height: 0;
+}
+
+.google_map img {
+	opacity: 0;
+	max-width: 100%;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .google_map {
+		background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=570x300&zoom=15&maptype=roadmap&markers=color:red%7Cвул.+Червоноармійська,+55,+Київ&sensor=false&visual_refresh=true&scale=2");	
+		background-size: 570px 300px;
+	}
+
+}
+
+.location-text {
+	text-align: center;
+}
+
+.location-text h3 {
+	text-transform: uppercase;
+	color: #0066ff; 
+	font-weight: 600;
+}
+
+.location-text p {
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 1.375em;
+}
+
+.gallery-title h2 {
+	margin-left: 10px;
+	font-weight: 600;
+}
+
+.gallery-title p {
+	margin: -10px 0 10px 12px;
+	display: block;
+	font-weight: 400;
+	font-size: 0.875em;
+}
+
+.gallery-title a {
+	font-style: italic;
+	color: #245dc1;
+}
+
+.gallery-title a:hover {
+	text-decoration: none;
+	color: #39f;
+}
+
+/* BOOTOM PHOTOS SECTION
 -------------------------------------------------- */
 .ri-grid{
 	margin: 50px auto 60px;
