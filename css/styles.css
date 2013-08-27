@@ -94,17 +94,22 @@ body {
 	margin: 10px 0;
 }
 
-.patners-text {
+.partners-text {
 	 text-align: center;
 	margin-bottom: 30px;
 }
 
-.patners-divider {
-	width: 185px;
-	margin: 40px 0;
+.partners-button {
+	display: block;
+	height: 48px;
+	max-width: 150px;
+	font-size: 0.9375em;
+	text-align: center;
+	padding: 13px 0;
 }
 
-.patners-row {
+
+.partners-row {
 	margin: 40px 0;
 }
 
@@ -631,7 +636,7 @@ only screen and (                min-resolution: 2dppx) {
     margin-top: 120px;
   }
 	
-  .patners-text {
+  .partners-text {
 	 text-align: right;
 	}
 }

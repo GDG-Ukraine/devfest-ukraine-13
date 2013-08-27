@@ -4209,6 +4209,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 4px;
+  outline: 0;
 }
 
 .navbar-toggle .icon-bar {
@@ -6023,10 +6024,12 @@ body.modal-open,
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-  display: block;
-  height: auto;
-  max-width: 100%;
-  line-height: 1;
+position: absolute;
+top: 0;
+left: 0;
+min-width: 100%;
+/*max-width: none;*/
+height: 100%;
 }
 
 .carousel-inner > .active,
