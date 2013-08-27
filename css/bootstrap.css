@@ -6024,6 +6024,15 @@ body.modal-open,
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
+<<<<<<< HEAD
+=======
+/*
+  display: block;
+  height: auto;
+  max-width: 100%;
+  line-height: 1;
+*/
+>>>>>>> dbb38ac50a7a02dba8c46f38992c93ad5fae5a97
 position: absolute;
 top: 0;
 left: 0;
