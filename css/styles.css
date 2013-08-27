@@ -108,6 +108,15 @@ body {
 	margin: 40px 0;
 }
 
+.partners-button {
+	display: block;
+	height: 48px;
+	width: 150px;
+	font-size: 0.9375em;
+	text-align: center;
+	padding: 13px 0;
+}
+
 .google-line {
 	margin: -25px 19px 0;
 }
