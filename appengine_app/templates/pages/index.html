@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block carousel %}
+    {% include "blocks/carousel.html" %}
+{% endblock %}
+
+{% block content %}
+        <div class="row featurette">
+            <div class="col-md-5">
+          <h2 class="featurette-heading">25-27 жовтня</h2>
+          <p class="lead">Київ, якась там плаза, потім поміняємо :)</p>
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Що?</h2>
+          <p class="lead">DevFest - це щорічний івент, організований силами українського комюніті Google Developers Group. Основною метою - є зібрання в одному місці всіх хто цікавиться технологіями Google для обміну досвідом, знайомств і навчання.</p>    
+        </div>
+      </div>
+        
+        <hr class="featurette-divider">
+        
+         <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="{% static "images/gdg-leaders-summit.png" %}" alt="GDG Ukraine Leaders Summit">
+          <h2>Саміт лідерів українських GDG</h2>
+          <p>25 жовтня, деталі...</p>
+          <p><a class="btn btn-default" href="#">Деталі &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="{% static "images/hackathon.png" %}" alt="Hackathon">
+          <h2>Хакатон</h2>
+          <p>25-26 жовтня, деталі...</p>
+          <p><a class="btn btn-default" href="#">Деталі &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="{% static "images/conference.png" %}" alt="Conference">
+          <h2>Конференція</h2>
+          <p>27 жовтня, ....</p>
+          <p><a class="btn btn-default" href="#">Деталі &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+      <hr class="featurette-divider">
+
+      {% include "blocks/partners.html" %}
+        
+{% endblock %}
