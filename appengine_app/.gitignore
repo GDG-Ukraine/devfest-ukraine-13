@@ -1,0 +1,9 @@
+.DS_Store
+*.pyc
+.gaedata
+
+django
+djangotoolbox
+djangoappengine
+dbindexer
+autoload
