@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_title %}Location &middot; GDG DevFest Ukraine 2013{% endblock %}
+
+{% block content %}
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4 location-text">
+			<h3>НСК "Олімпійський"</h3>
+			<p>Україна, Київ, 03680,
+вул. Червоноармійська, 55</p>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-6">
+			<a class="google_map" href="http://goo.gl/M6yeKi" >
+          		<img class="map" src="http://maps.googleapis.com/maps/api/staticmap?size=570x300&amp;zoom=15&amp;maptype=roadmap&amp;markers=color:red%7Cвул.+Червоноармійська,+55,+Київ&amp;sensor=false&amp;visual_refresh=true" alt="вул. Червоноармійська, 55, Київ">
+			</a>
+       </div>
+	  </div>
+	
+		
+      <hr class="featurette-divider">
+      {% include "blocks/partners.html" %}
+      
+{% endblock %}
