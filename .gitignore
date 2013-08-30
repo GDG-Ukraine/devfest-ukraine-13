@@ -5,3 +5,4 @@
 .env
 build
 src
+settings_prod.py

@@ -19,7 +19,7 @@ DATABASES['default'] = {
 }
 AUTOLOAD_SITECONF = 'indexes'
 
-SECRET_KEY = '<your-secret-key>'
+SECRET_KEY = 'secret_key'
 
 INSTALLED_APPS = (
     'django.contrib.auth',
