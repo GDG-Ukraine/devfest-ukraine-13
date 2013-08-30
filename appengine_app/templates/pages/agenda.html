@@ -3,7 +3,12 @@
 
 {% block page_title %}Agenda &middot; GDG DevFest Ukraine 2013{% endblock %}
 
+{% block carousel %}
+    {% include "blocks/carousel.html" %}
+{% endblock %}
+
 {% block content %}
+    <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-11">
             <h2 class="day">Day 1</h2>
             <ul class="cbp_tmtimeline">
@@ -93,11 +98,10 @@
                 </li>
              </ul>
         </div>
-
-        <hr class="featurette-divider">
-        </div>      
+    </div>     
+    
+    <hr class="featurette-divider">
       
-      <hr class="featurette-divider">
 
       {% include "blocks/partners.html" %}
 
