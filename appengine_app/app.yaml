@@ -1,5 +1,5 @@
-application: your-app-id
-version: 0-0-0
+application: gdg-devfest-ua
+version: 0-0-1
 runtime: python27
 api_version: 1
 threadsafe: yes
