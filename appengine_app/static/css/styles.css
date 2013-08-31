@@ -234,9 +234,13 @@ body {
 h2.day {
 	font-weight: 600;
 	font-size: 3em;
+    border-bottom: 1px dotted #DBDBDB;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: 80px;
 }
-h2.day:nth-child(3) {
-	margin-top: 80px;
+h2.day:nth-child(1) {
+	margin-top: 20px;
 }
 
 .cbp_tmtimeline {
@@ -351,6 +355,10 @@ h2.day:nth-child(3) {
 
 .cbp_tmlabel a {
 	color: inherit;
+}
+
+.cbp_tmlabel b {
+    font-weight: 600;
 }
 
 /* Example Media Queries */
