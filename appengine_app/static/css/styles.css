@@ -86,6 +86,17 @@ body {
 
 /* My changes
 ------------------------- */
+
+.no_a_highlight a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.no_a_highlight a:hover {
+    text-decoration: underline;
+    color: inherit;
+}
+
 .navbar-brand img {
 	max-width: 180px;
 }
@@ -423,20 +434,19 @@ h2.day:nth-child(1) {
 
 #become_speaker {
     margin-bottom: 19px;
+    width: 100%;
 }
 
 /* LOCATION SECTION
 -------------------------------------------------- */
 .google_map {
 	display: block;
-	background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=570x300&zoom=15&maptype=roadmap&markers=color:red%7Cвул.+Червоноармійська,+55,+Київ&sensor=false&visual_refresh=true");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	line-height: 0;
 }
 
 .google_map img {
-	opacity: 0;
 	max-width: 100%;
 }
 
@@ -449,10 +459,19 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
   
   .google_map {
-		background-image: url("http://maps.googleapis.com/maps/api/staticmap?size=570x300&zoom=15&maptype=roadmap&markers=color:red%7Cвул.+Червоноармійська,+55,+Київ&sensor=false&visual_refresh=true&scale=2");	
 		background-size: 570px 300px;
 	}
 
+}
+
+.location_row {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.location_logo {
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
 
 .location-text {

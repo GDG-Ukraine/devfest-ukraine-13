@@ -1,28 +1,54 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block page_title %}Location &middot; GDG DevFest Ukraine 2013{% endblock %}
+{% block page_title %}Розташування &middot; GDG DevFest Ukraine 2013{% endblock %}
 
 {% block carousel %}
     {% include "blocks/carousel.html" %}
 {% endblock %}
 
 {% block content %}
-      <div class="row">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1 id="speakers_header">Розташування</h1>
+            <div> 
+                Фестиваль буде проходити в двох локаціях. Саміт лідерів <abbr title="Google Developers Group">GDG</abbr> та хакатон пройдуть в приміщенні <a href="#location_1">офісу DataArt на 6 поверсі</a>, конференція - в надсучасному <a href="#location_2">бізнес центрі "Парус"</a>, в самісінькому центрі Києва.
+            </div>
+        </div>        
+    </div>
+
+      <div class="row location_row">
         <div class="col-xs-12 col-sm-4 col-md-4 location-text">
-			<h3>НСК "Олімпійський"</h3>
-			<p>Україна, Київ, 03680,
-вул. Червоноармійська, 55</p>
+            <a id="location_1"></a>
+			<img class="location_logo" src="{% static "images/partners/dataart.jpg" %}" alt="Data Art"/>
+            <h3>Офіс DataArt</h3>
+			<p>Україна, Київ, Бехтеревский провулок 14-E</p>
         </div>
         <div class="col-xs-12 col-sm-8 col-md-6">
-			<a class="google_map" href="http://goo.gl/M6yeKi" >
-          		<img class="map" src="http://maps.googleapis.com/maps/api/staticmap?size=570x300&amp;zoom=15&amp;maptype=roadmap&amp;markers=color:red%7Cвул.+Червоноармійська,+55,+Київ&amp;sensor=false&amp;visual_refresh=true" alt="вул. Червоноармійська, 55, Київ">
+			<a class="google_map" href="http://goo.gl/6xBZNB" >
+          		<img class="map" src="http://maps.google.com/maps/api/staticmap?center=50.459306,30.496771&zoom=15&markers=color:red|label:D|50.459306,30.496771&size=570x300&sensor=true" alt="Київ, Бехтеревский провулок 14E">
 			</a>
        </div>
 	  </div>
 	
+
+    <div class="row location_row">
+        <div class="col-xs-12 col-sm-4 col-md-4 location-text">
+            <a id="location_2"></a>
+            <img class="location_logo" src="{% static "images/partners/parus.gif" %}" alt="Бізнес центр Парус"/>
+			<h3>Бізнес центр "Парус"</h3>
+			<p>Україна, Київ, вул. Мечнікова 2</p>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-6">
+			<a class="google_map" href="http://goo.gl/bHZjP6" >
+          		<img class="map" src="http://maps.google.com/maps/api/staticmap?center=50.437572,30.527296&zoom=15&markers=color:red|label:P|50.459306,30.496771|50.437572,30.527296&size=570x300&sensor=true" alt="иїв, Бехтеревский провулок 14E">
+			</a>
+       </div>
+	  </div>
 		
       <hr class="featurette-divider">
+
       {% include "blocks/partners.html" %}
       
 {% endblock %}
