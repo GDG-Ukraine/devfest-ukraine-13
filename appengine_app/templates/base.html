@@ -90,6 +90,13 @@
     <script src="{% static "js/plusgallery.js"%}"></script>
     <script src="{% static "js/modernizr.custom.26633.js" %}"></script> 
     <script src="{% static "js/jquery.gridrotator.js" %}"></script>
+    <script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
     <script>
       $(function() {
                 $( '#ri-grid' ).gridrotator( {

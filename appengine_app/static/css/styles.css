@@ -137,6 +137,11 @@ body {
 	margin: -25px 19px 0;
 }
 
+#plusone_holder {
+    position: relative;
+    top: 12px;
+}
+
 .footer-top {
 	padding: 20px 0;
 	background-color: #F9F9F9;

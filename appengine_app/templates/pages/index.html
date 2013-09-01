@@ -1,48 +1,68 @@
-{% extends "base.html" %}
-{% load static %}
+{% extends "base.html" %} 
 
-{% block carousel %}
-    {% include "blocks/carousel.html" %}
-{% endblock %}
+{% load static %} 
+
+{% block carousel %} 
+    {% include "blocks/carousel.html" %} 
+{% endblock %} 
 
 {% block content %}
-        <div class="row featurette">
-            <div class="col-md-5">
-                <h2 class="featurette-heading">25-27 жовтня, Київ</h2>
-                <p class="lead no_a_highlight"><a href="/location#location_1">Офіс DataArt, Бехтеревский провулок 14-E</a> 
-                <br/><a href="/location#location_2">Бізнес центр "Парус", вул. Мечнікова 2</a></p>
-            </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Що?</h2>
-          <p class="lead"><b style="font-weight: 500;">DevFest</b> - це щорічний івент, організований силами українського ком'юніті Google Developers Group. Основна мета — зустріч всіх, хто цікавиться технологіями Google для обміну досвідом, знайомств і навчання. В програмі: саміт лідерів <abbr title="Google Developers Group">GDG</abbr>, хакатон, конференція.</p>    
-        </div>
-      </div>
-        
-        <hr class="featurette-divider">
-        
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="/static/images/gdg-leaders-summit.png" alt="GDG Leaders Summit">
-          <h2>Саміт лідерів GDG</h2>
-          <p><b style="font-weight: 600;">25 жовтня</b>, в приміщенні DataArt в Києві зберуться лідери <abbr title="Google Developers Group">GDG</abbr> з України, Білорусі, Німеччини та Туреччини, щоб поділитися досвідом ком'юніті менеджменту, найкращими практиками проведення івентів та просто поспілкуватися</p>
-          <p><a class="btn btn-default" href="#">Деталі &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="/static/images/hackathon.png" alt="Hackathon">
-          <h2>Хакатон</h2>
-          <p><b style="font-weight: 600;">25-26 жовтня</b>, 30 годин нон-стоп кодингу для найстійкіших, море RedBull'у, фану та цікавих знайомств і все для того, щоб показати в кінці робочий прототип додатку на одній з найновіших платформ від Google</p>
-          <p><a class="btn btn-default" href="#">Деталі &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="/static/images/conference.png" alt="Conference">
-          <h2>Конференція</h2>
-          <p><b style="font-weight: 600;">27 жовтня</b>, в приміщенні надсучасного бізнес центру "Парус" у самісінькому центрі Києва відбудеться найбільша девелоперська конференція присвячена технологіям Google в Україні. В програмі кіноути, 3 потоки доповідей від <a href="/speakers/">відомих спікерів</a>, визначення найактивнішої <abbr title="Google Developers Group">GDG</abbr> групи в Україні та ще багато цікавого</p>
-          <p><a class="btn btn-default" href="#">Деталі &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
 
-      <hr class="featurette-divider">
+<div class="row featurette">
+    <div class="col-md-5">
+        <h2 class="featurette-heading">25-27 жовтня, Київ</h2>
+        <p class="lead no_a_highlight">
+            <a href="/location#location_1">Офіс DataArt, Бехтеревский провулок 14-E</a>
+            <br/>
+            <a href="/location#location_2">Бізнес центр "Парус", вул. Мечнікова 2</a>
+        </p>
+    </div>
+    <div class="col-md-7">
+        <h2 class="featurette-heading">Що?</h2>
+        <p class="lead">
+            <b style="font-weight: 500;">DevFest</b>- це щорічний івент, організований силами українського ком'юніті Google Developers Group. Основна мета — зустріч всіх, хто цікавиться технологіями Google для обміну досвідом, знайомств і навчання. В програмі: саміт лідерів
+            <abbr title="Google Developers Group">GDG</abbr>, хакатон, конференція.</p>
+    </div>
+</div>
 
-      {% include "blocks/partners.html" %}
-        
+<hr class="featurette-divider">
+
+<div class="row">
+    <div class="col-lg-4">
+        <img class="img-circle" src="/static/images/gdg-leaders-summit.png" alt="GDG Leaders Summit">
+        <h2>Саміт лідерів GDG</h2>
+        <p>
+            <b style="font-weight: 600;">25 жовтня</b>, в приміщенні DataArt в Києві зберуться лідери
+            <abbr title="Google Developers Group">GDG</abbr>з України, Білорусі, Німеччини та Туреччини, щоб поділитися досвідом ком'юніті менеджменту, найкращими практиками проведення івентів та просто поспілкуватися</p>
+        <p>
+            <a class="btn btn-default" href="#">Деталі &raquo;</a>
+        </p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+        <img class="img-circle" src="/static/images/hackathon.png" alt="Hackathon">
+        <h2>Хакатон</h2>
+        <p>
+            <b style="font-weight: 600;">25-26 жовтня</b>, 30 годин нон-стоп кодингу для найстійкіших, море RedBull'у, фану та цікавих знайомств і все для того, щоб показати в кінці робочий прототип додатку на одній з найновіших платформ від Google</p>
+        <p>
+            <a class="btn btn-default" href="#">Деталі &raquo;</a>
+        </p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+        <img class="img-circle" src="/static/images/conference.png" alt="Conference">
+        <h2>Конференція</h2>
+        <p>
+            <b style="font-weight: 600;">27 жовтня</b>, в приміщенні надсучасного бізнес центру "Парус" у самісінькому центрі Києва відбудеться найбільша девелоперська конференція присвячена технологіям Google в Україні. В програмі кіноути, 3 потоки доповідей від
+            <a href="/speakers/">відомих спікерів</a>, визначення найактивнішої
+            <abbr title="Google Developers Group">GDG</abbr>групи в Україні та ще багато цікавого</p>
+        <p>
+            <a class="btn btn-default" href="#">Деталі &raquo;</a>
+        </p>
+    </div><!-- /.col-lg-4 -->
+</div><!-- /.row -->
+
+
+<hr class="featurette-divider">
+
+{% include "blocks/partners.html" %} 
+
 {% endblock %}
