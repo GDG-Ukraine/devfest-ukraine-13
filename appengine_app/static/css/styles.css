@@ -205,6 +205,10 @@ body {
 	margin-left: 180px;
 }
 
+.speaker-country {
+    color: #d2d2d2;
+}
+
 .speakers img {
 	margin: 20px 0;
 }
