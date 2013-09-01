@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block page_title %}Cаміт лідерів GDG &middot; GDG DevFest Ukraine 2013{% endblock %}
+
+{% block carousel %}
+    {% include "blocks/carousel.html" %}
+{% endblock %}
+
+{% block content %}
+
+    <h1 id="speakers_header">Cаміт лідерів GDG</h1>
+    <div class="row">
+        <div class="col-md-3">
+            <img class="img-circle" src="/static/images/gdg-leaders-summit.png" alt="GDG Leaders Summit">
+        </div>    
+        <div class="col-md-9">
+            <p><b style="font-weight: 600;">25 жовтня</b>, в приміщенні DataArt в Києві зберуться лідери
+            <abbr title="Google Developers Group">GDG</abbr> з України, Білорусії, Німеччини та Туреччини, щоб поділитися досвідом ком'юніті менеджменту, найкращими практиками проведення івентів та просто поспілкуватися</p>
+            <div class="alert alert-warning" style="margin-top: 50px;">
+                <i><b>Робота кипить!</b> Сторінка ще не завершена, більше інформації ми опублікуємо згодом.</i>
+            </div>
+        </div>    
+    </div>
+
+		
+      <hr class="featurette-divider">
+
+      {% include "blocks/partners.html" %}
+      
+{% endblock %}

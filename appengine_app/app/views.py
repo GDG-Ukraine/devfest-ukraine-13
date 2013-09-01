@@ -47,3 +47,24 @@ def devfest2012(request):
 
     return render_to_response('pages/devfest2012.html', context,
                               context_instance=RequestContext(request))
+
+def summit(request):
+    context = {
+        "active_menu": "none",
+    }
+    return render_to_response('pages/summit.html', context,
+                              context_instance=RequestContext(request))
+
+def hackathon(request):
+    context = {
+        "active_menu": "none",
+    }
+    return render_to_response('pages/hackathon.html', context,
+                              context_instance=RequestContext(request))
+
+def conference(request):
+    context = {
+        "active_menu": "none",
+    }
+    return render_to_response('pages/conference.html', context,
+                              context_instance=RequestContext(request))
