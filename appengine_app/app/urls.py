@@ -13,5 +13,5 @@ urlpatterns = patterns(
     url(r'^agenda/$', 'app.views.agenda', name='agenda'),
     url(r'^location/$', 'app.views.location', name='location'),
     url(r'^speakers/$', 'app.views.speakers', name='speakers'),
-    url(r'^photos/$', 'app.views.photos', name='photos'),
+    url(r'^devfest2012/$', 'app.views.devfest2012', name='devfest2012'),
 )

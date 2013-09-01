@@ -40,10 +40,10 @@ def speakers(request):
                               context_instance=RequestContext(request))
 
 
-def photos(request):
+def devfest2012(request):
     context = {
-        "active_menu": "photos",
+        "active_menu": "devfest2012",
     }
 
-    return render_to_response('pages/photos.html', context,
+    return render_to_response('pages/devfest2012.html', context,
                               context_instance=RequestContext(request))

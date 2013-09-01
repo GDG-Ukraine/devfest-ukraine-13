@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_title %}DevFest 2012 &middot; GDG DevFest Ukraine 2013{% endblock %}
+
+{% block carousel %}
+    {% include "blocks/carousel.html" %}
+{% endblock %}
+
+{% block content %}     
+    
+    <div class="gallery-title">
+        <h2>GDG DevFest 2012</h2>
+        <p>by <a href="https://plus.google.com/104118176106162375262/about">Sasha Paleeva</a></p>
+    </div>
+    <div id="plusgallery" data-type="google" data-userid="104118176106162375262" data-include="5817438308256596993,5817432819295677521,5816605598325298273" data-limit="330">
+    </div>
+	
+    <hr class="featurette-divider">
+    
+    {% include "blocks/partners.html" %}
+		
+ {% endblock %}

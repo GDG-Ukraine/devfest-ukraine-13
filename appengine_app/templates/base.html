@@ -12,6 +12,7 @@
       
     <!-- Bootstrap core CSS -->
     <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
+    <link href="{% static "css/plusgallery.css" %}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -44,7 +45,7 @@
                 <li class="{% if active_menu == "agenda" %}active{% endif %}"><a href="{% url agenda %}">Програма</a></li>
                 <li class="{% if active_menu == "speakers" %}active{% endif %}"><a href="{% url speakers %}">Спікери</a></li>
                 <li class="{% if active_menu == "location" %}active{% endif %}"><a href="{% url location %}">Розташування</a></li>
-                <li class="{% if active_menu == "photos" %}active{% endif %}"><a href="{% url photos %}">DevFest 2012</a></li>
+                <li class="{% if active_menu == "devfest2012" %}active{% endif %}"><a href="{% url devfest2012 %}">DevFest 2012</a></li>
                 <!--<li><a href="http://gdg.org.ua/">GDG.org.ua</a></li>-->
               </ul>
             </div>
@@ -73,7 +74,7 @@
 
 
         <!-- SPEAKERS SECTION -->
-        {% include "blocks/speackers.html" %}
+<!--        {% include "blocks/speackers.html" %}-->
      <!-- /SPEEKERS SECTION -->
 
     
@@ -86,9 +87,10 @@
     <script src="{% static "js/jquery.js" %}"></script>
     <script src="{% static "js/bootstrap.min.js" %}"></script>
     <script src="{% static "js/holder.js" %}"></script>
-      <script src="{% static "js/modernizr.custom.26633.js" %}"></script> 
-      <script src="{% static "js/jquery.gridrotator.js" %}"></script>
-      <script>
+    <script src="{% static "js/plusgallery.js"%}"></script>
+    <script src="{% static "js/modernizr.custom.26633.js" %}"></script> 
+    <script src="{% static "js/jquery.gridrotator.js" %}"></script>
+    <script>
       $(function() {
                 $( '#ri-grid' ).gridrotator( {
                     rows        : 3,
