@@ -1,0 +1,8 @@
+.DS_Store
+*.pyc
+*.sublime-*
+.coverage
+.env
+build
+src
+settings_prod.py

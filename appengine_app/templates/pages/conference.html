@@ -1,0 +1,37 @@
+{% extends "base.html" %} 
+
+{% load static %} 
+
+{% block page_title %}Конференція &middot; GDG DevFest Ukraine 2013{% endblock %} 
+
+{% block carousel %} 
+    {% include "blocks/carousel.html" %} 
+{% endblock %} 
+
+{% block content %}
+    <h1 id="speakers_header">Конференція</h1>
+    <div class="row">
+        <div class="col-md-3">
+            <img class="img-circle" src="/static/images/conference.png" alt="Conference">
+        </div>
+        <div class="col-md-9">
+            <p>
+                <b style="font-weight: 600;">27 жовтня</b>, в приміщенні надсучасного бізнес центру "Парус" у самісінькому центрі Києва відбудеться найбільша девелоперська конференція присвячена технологіям Google в Україні. В програмі кіноути, три потоки доповідей від
+                <a href="/speakers/">відомих спікерів</a>, визначення найактивнішої
+                <abbr title="Google Developers Group">GDG</abbr>групи в Україні та ще багато цікавого
+            </p>
+            
+            <h3>Реєстрація</h3>
+            Реєстрація на подію буде відкрита 1 жовтня. Попередня реєстрація на сайті <a href="https://developers.google.com/events/901866586/">developers.google.com</a>.
+            
+            <div class="alert alert-warning" style="margin-top: 50px;">
+                <i>
+                    <b>Робота кипить!</b> Сторінка ще не завершена, більше інформації ми опублікуємо згодом.</i>
+            </div>
+        </div>
+    </div>
+    <hr class="featurette-divider">
+    
+    {% include "blocks/partners.html" %} 
+
+{% endblock %}

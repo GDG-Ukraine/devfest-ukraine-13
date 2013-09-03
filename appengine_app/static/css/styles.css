@@ -1,0 +1,715 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+body {
+  color: #5a5a5a;
+}
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: relative;
+  z-index: 15;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 60px;
+
+  /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+  margin-top: -28px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+/* My changes
+------------------------- */
+
+.no_a_highlight a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.no_a_highlight a:hover {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.navbar-brand img {
+	max-width: 180px;
+}
+
+.partners {
+	margin: 10px 0;
+}
+
+.partners-text {
+	 text-align: center;
+	margin-bottom: 30px;
+}
+
+.partners-button {
+	display: block;
+	height: 48px;
+	max-width: 150px;
+	font-size: 0.9375em;
+	text-align: center;
+	padding: 13px 0;
+}
+
+
+.partners-row {
+	margin: 40px 0;
+}
+
+.partners-button {
+	display: block;
+	height: 48px;
+	width: 150px;
+	font-size: 0.9375em;
+	text-align: center;
+	padding: 13px 0;
+}
+
+.google-line {
+	margin: -25px 19px 0;
+}
+
+#plusone_holder {
+    position: relative;
+    top: 12px;
+  	margin-left: 20px;
+}
+
+.footer-top {
+	padding: 20px 0;
+	background-color: #F9F9F9;
+	border-top: 1px solid #F5F5F5; 
+}
+
+.footer-top ul {
+	padding: 0;
+}
+
+.footer-top ul  li {
+	list-style-type: none;
+}
+
+.footer-top ul li a {
+	padding: 0;
+	display: block;
+	font-size: 0.9375em;
+	font-weight: 300;
+	color: #245dc1;
+}
+
+.footer-top ul li a:hover {
+	color: #39f;
+	text-decoration: none;
+}
+
+.footer-bottom {
+  font-size: 0.875em;
+  background-color: #F5F5F5;
+  border-top: 1px solid #EEE;
+}
+
+.footer-bottom a {
+	color: #245dc1;
+}
+
+.footer-bottom a:hover {
+	text-decoration: none;
+	color: #39f;
+}
+
+.footer-bottom img {
+	margin: 11px 5px;
+}
+
+.footer-bottom p {
+	margin: 15px 0;
+	font-weight: 300;
+}
+
+@media (max-width: 480px) {
+  #plusone_holder {
+    float: left !important;
+  }
+  .footer-bottom p {
+    display: block;
+    width: 91.66666666666666%;
+    clear: both;
+    padding-top: 20px;
+  }
+}
+
+.social img {
+	width: 32px;
+}
+
+.speakers > div{
+	margin: 40px 0 60px;
+}
+
+.speaker-text {
+	margin-left: 180px;
+}
+
+.speaker-country {
+    color: #d2d2d2;
+}
+
+.speakers img {
+	margin: 20px 0;
+}
+
+
+@media (max-width: 480px) {
+	.speakers img {
+		width: 80px;
+/*
+		float: none;
+		left: 50%;
+*/
+	}
+	.speaker-text {
+		display: block;
+/*		clear: both;*/
+		margin-left: 90px;
+	}
+}
+
+.speakers h3 {
+	text-transform: uppercase;
+	color: #0066ff; 
+	font-weight: 600;
+}
+
+.speakers h4 {
+	color: #666; 
+	font-weight: 400;
+	font-style: italic;
+}
+
+.speakers p {
+	margin-top: 20px;
+	color: #666; 
+	font-weight: 400;
+	font-size: 0.9375em;
+	line-height: 1.375em;
+}
+
+/* AGENDA SECTION
+-------------------------------------------------- */
+h2.day {
+	font-weight: 600;
+	font-size: 3em;
+    border-bottom: 1px dotted #DBDBDB;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: 80px;
+}
+h2.day:nth-child(1) {
+	margin-top: 20px;
+}
+
+.cbp_tmtimeline {
+    margin: 30px 0 0 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+} 
+ 
+/* The line */
+.cbp_tmtimeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    background: #afdcf8;
+    left: 20%;
+    margin-left: -10px;
+}
+ 
+.cbp_tmtimeline > li {
+    position: relative;
+}
+ 
+/* The date/time */
+.cbp_tmtimeline > li .cbp_tmtime {
+    display: block;
+    width: 25%;
+    padding-right: 100px;
+    position: absolute;
+}
+ 
+.cbp_tmtimeline > li .cbp_tmtime span {
+    display: block;
+    text-align: right;
+}
+ 
+.cbp_tmtimeline > li .cbp_tmtime span:first-child {
+    font-size: 0.9em;
+    color: #bdd0db;
+}
+ 
+.cbp_tmtimeline > li .cbp_tmtime span:last-child {
+    font-size: 2.9em;
+    color: #3594cb;
+}
+ 
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {
+    color: #6cbfee;
+}
+ 
+/* Right content */
+.cbp_tmtimeline > li .cbp_tmlabel {
+    margin: 0 0 15px 25%;
+    background: #3594cb;
+    color: #fff;
+    padding: 1.5em;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.4;
+    position: relative;
+    border-radius: 3px;
+}
+ 
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
+    background: #6cbfee;
+}
+ 
+.cbp_tmtimeline > li .cbp_tmlabel h2 { 
+    margin-top: 0px;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+ 
+/* The triangle */
+.cbp_tmtimeline > li .cbp_tmlabel:after {
+    right: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-right-color: #3594cb;
+    border-width: 10px;
+    top: 10px;
+}
+ 
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
+    border-right-color: #6cbfee;
+}
+ 
+/* The icons */
+.cbp_tmtimeline > li .cbp_tmicon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: #46a4da;
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px #afdcf8;
+    text-align: center;
+    left: 20%;
+    top: 0;
+    margin: 0 0 0 -25px;
+}
+
+.cbp_tmlabel img {
+	width: 35px;
+	margin-right: 10px;
+}
+
+.cbp_tmlabel a {
+	color: inherit;
+}
+
+.cbp_tmlabel b {
+    font-weight: 600;
+}
+
+/* Example Media Queries */
+@media screen and (max-width: 65.375em) {
+ 
+    .cbp_tmtimeline > li .cbp_tmtime span:last-child {
+        font-size: 1.5em;
+    }
+}
+ 
+@media screen and (max-width: 47.2em) {
+    .cbp_tmtimeline:before {
+        display: none;
+    }
+ 
+    .cbp_tmtimeline > li .cbp_tmtime {
+        width: 100%;
+        position: relative;
+        padding: 0 0 20px 0;
+    }
+ 
+    .cbp_tmtimeline > li .cbp_tmtime span {
+        text-align: left;
+    }
+ 
+    .cbp_tmtimeline > li .cbp_tmlabel {
+        margin: 0 0 30px 0;
+        padding: 1em;
+        font-weight: 400;
+        font-size: 95%;
+    }
+ 
+    .cbp_tmtimeline > li .cbp_tmlabel:after {
+        right: auto;
+        left: 20px;
+        border-right-color: transparent;
+        border-bottom-color: #3594cb;
+        top: -20px;
+    }
+ 
+    .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
+        border-right-color: transparent;
+        border-bottom-color: #6cbfee;
+    }
+ 
+    .cbp_tmtimeline > li .cbp_tmicon {
+        position: relative;
+        float: right;
+        left: auto;
+        margin: -55px 5px 0 0px;
+    }   
+}
+
+/* SPEAKERS SECTION
+*/
+#speakers_header {
+    border-bottom: 1px dotted #DBDBDB;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#become_speaker {
+    margin-bottom: 19px;
+    width: 100%;
+}
+
+/* LOCATION SECTION
+-------------------------------------------------- */
+.google_map {
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	line-height: 0;
+}
+
+.google_map img {
+	max-width: 100%;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .google_map {
+		background-size: 570px 300px;
+	}
+
+}
+
+.location_row {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.location_logo {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.location-text {
+	text-align: center;
+}
+
+.location-text h3 {
+	text-transform: uppercase;
+	color: #0066ff; 
+	font-weight: 600;
+}
+
+.location-text p {
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 1.375em;
+}
+
+.gallery-title h2 {
+	margin-left: 10px;
+	font-weight: 600;
+}
+
+.gallery-title p {
+	margin: -10px 0 10px 12px;
+	display: block;
+	font-weight: 400;
+	font-size: 0.875em;
+}
+
+.gallery-title a {
+	font-style: italic;
+	color: #245dc1;
+}
+
+.gallery-title a:hover {
+	text-decoration: none;
+	color: #39f;
+}
+
+/* BOOTOM PHOTOS SECTION
+-------------------------------------------------- */
+.ri-grid{
+	margin: 50px auto 60px;
+	position: relative;
+	height: auto;
+}
+
+.ri-grid ul {
+	list-style: none;
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* Clear floats by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.ri-grid ul:before,
+.ri-grid ul:after{
+	content: '';
+    display: table;
+}
+
+.ri-grid ul:after {
+    clear: both;
+}
+
+.ri-grid ul {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+} 
+
+.ri-grid ul li {
+	-webkit-perspective: 400px;
+	-moz-perspective: 400px;
+	-o-perspective: 400px;
+	-ms-perspective: 400px;
+	perspective: 400px;	
+	margin: 0;
+	padding: 0;
+	float: left;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	background: #000;
+}
+
+.ri-grid ul li a{
+	display: block;
+	outline: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #333;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+/* Grid wrapper sizes */
+.ri-grid-size-1{
+	width: 55%;
+}
+.ri-grid-size-2{
+	width: 100%;
+}
+.ri-grid-size-3{
+	width: 100%;
+	margin-top: 0px;
+}
+
+/* Shadow style */
+.ri-shadow:after,
+.ri-shadow:before{
+	content: "";
+	position: absolute;
+	z-index: -2;
+	bottom: 15px;
+	left: 10px;
+	width: 50%;
+	height: 20%;
+	max-width: 300px;
+	max-height: 100px;
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+.ri-shadow:after{
+	right: 10px;
+	left: auto;
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	transform: rotate(3deg);
+}
+
+.ri-grid-loading:after,
+.ri-grid-loading:before{
+	display: none;
+}
+
+.ri-loading-image{
+	display: none;
+}
+
+.ri-grid-loading .ri-loading-image{
+	position: relative;
+	width: 30px;
+	height: 30px;
+	left: 50%;
+	margin: 100px 0 0 -15px;
+	display: block;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+	
+  .partners-text {
+	 text-align: right;
+	}
+}
+
+

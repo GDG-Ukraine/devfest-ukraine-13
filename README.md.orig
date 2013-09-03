@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+GDG DevFest website template
+=======
+
+Website template made by GDG Lviv team. Designed by Oleh Zasadnyy.
+=======
 # GDG DevFest Ukraine Site
 
 Site created for DevFest Season 2013 by GDG Ukraine Team.
@@ -13,4 +19,5 @@ Site is simple set of html pages build on top of django framework written in Pyt
 * Design and markup: [bilenkuyboy](https://github.com/bilenkuyboy)
 * AppEngine integration: [kolyaflash](https://github.com/kolyaflash)
 * Content: [zasadnyy](https://github.com/zasadnyy)
+>>>>>>> release/v.1.0
 

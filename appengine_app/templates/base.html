@@ -1,0 +1,146 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GDG DevFest 2013 Ukraine, 25-27 жовтня, Київ">
+    <meta name="author" content="Oleh Zasadnyy (GDG Lviv)">
+   
+      <!--Twitter cards meta tags-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GDG DevFest 2013 Ukraine, 25-27 жовтня, Київ">
+    <meta name="twitter:description" content="DevFest- це щорічний івент, організований силами українського         комюніті Google Developers Group. Основна мета — зустріч всіх, хто цікавиться технологіями Google                   для обміну досвідом, знайомств і навчання. В програмі: саміт лідерів GDG, хакатон, конференція.">
+    <meta name="twitter:image:src" content="http://gdg-devfest-ua.appspot.com/static/images/devfestualogo.png">
+    <meta name="twitter:domain" content="devfest.gdg.org.ua">
+
+    <!--Shema.org meta tags (for G+)-->
+    <meta property="og:title" content="GDG DevFest 2013 Ukraine, 25-27 жовтня, Київ" />
+    <meta property="og:image" content="{% static "images/devfestualogo.png" %}" />
+    <meta property="og:description" content="DevFest- це щорічний івент, організований силами українського комюніті Google Developers Group. Основна мета — зустріч всіх, хто цікавиться технологіями Google для обміну досвідом, знайомств і навчання. В програмі: саміт лідерів GDG, хакатон, конференція." />
+   
+    <link rel="shortcut icon" href="{% static "images/favicon.png" %}">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <title>{% block page_title %}GDG DevFest Ukraine 2013 {% endblock %}</title>
+      
+    <!-- Bootstrap core CSS -->
+    <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
+    <link href="{% static "css/plusgallery.css" %}" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../images/js/html5shiv.js"></script>
+      <script src="../../images/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="{% static "css/styles.css" %}" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="{% url index %}"><img src="{% static "images/logo.png" %}"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="{% if active_menu == "index" %}active{% endif %}"><a href="{% url index %}">Головна</a></li>
+                <li class="{% if active_menu == "agenda" %}active{% endif %}"><a href="{% url agenda %}">Програма</a></li>
+                <li class="{% if active_menu == "speakers" %}active{% endif %}"><a href="{% url speakers %}">Спікери</a></li>
+                <li class="{% if active_menu == "location" %}active{% endif %}"><a href="{% url location %}">Розташування</a></li>
+                <li class="{% if active_menu == "devfest2012" %}active{% endif %}"><a href="{% url devfest2012 %}">DevFest 2012</a></li>
+                <!--<li><a href="http://gdg.org.ua/">GDG.org.ua</a></li>-->
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    {% block carousel %}
+    {% endblock %}
+      
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+        
+      <!-- START THE FEATURETTES -->
+        {% block content %}{% endblock %}
+      <!-- /END THE FEATURETTES -->
+        
+    </div><!-- /.container -->
+
+
+     <!-- SPEAKERS SECTION -->
+<!--        {% include "blocks/speackers.html" %}-->
+     <!-- /SPEEKERS SECTION -->
+
+    
+     {% include "blocks/footer.html" %}
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+     
+    <script src="{% static "js/jquery.js" %}"></script>
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+    <script src="{% static "js/holder.js" %}"></script>
+    <script src="{% static "js/plusgallery.js"%}"></script>
+    <script src="{% static "js/modernizr.custom.26633.js" %}"></script> 
+    <script src="{% static "js/jquery.gridrotator.js" %}"></script>
+    <script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+    <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        
+          ga('create', 'UA-43643469-1', 'gdg.org.ua');
+          ga('send', 'pageview');
+    </script>
+    <script>
+      $(function() {
+                $('#plusgallery').plusGallery();
+                $( '#ri-grid' ).gridrotator( {
+                    rows        : 3,
+                    columns     : 15,
+                    animType    : 'fadeInOut',
+                    animSpeed   : 2000,
+                    interval    : 800,
+                    w320        : {
+                        rows    : 3,
+                        columns : 4
+                    },
+                    w240        : {
+                        rows    : 3,
+                        columns : 4
+                    },
+                    step        : 'random',
+                    maxStep     : 5,
+                    preventClick : true
+                } );
+            
+            });
+      </script>
+  </body>
+</html>

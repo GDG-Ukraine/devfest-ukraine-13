@@ -1,0 +1,40 @@
+=== Getting started ===
+
+1. Run build.
+This will download requirements for project and locate it in appengine_app.
+
+    $ make build
+
+After successful build, remove `build` and `src` directories if any.
+    $ rm -r ./build ./src
+
+2. Download latest GAE SDK.
+Download latest https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python Google App Engine SDK and locate it in
+/usr/local/google_appengine
+
+    $ cd /tmp/ && wget http://googleappengine.googlecode.com/files/google_appengine_1.8.3.zip
+    $ unzip ./google_appengine_1.8.3.zip
+    $ cp -r ./google_appengine /usr/local/
+
+3. Run dev server
+
+Return to project's dir and run
+
+    $ make run
+
+if you see this:
+
+./appengine_app/manage.py runserver
+INFO     2013-08-29 20:24:30,248 sdk_update_checker.py:244] Checking for updates to the SDK.
+INFO     2013-08-29 20:24:30,812 dev_appserver_multiprocess.py:656] Running application dev~your-app-id on port 8000: http://127.0.0.1:8000
+INFO     2013-08-29 20:24:30,812 dev_appserver_multiprocess.py:658] Admin console is available at: http://127.0.0.1:8000/_ah/admin
+
+- everything works fine, just follow url: http://127.0.0.1:8000
+
+
+=== Deploy to App Engine ===
+
+1. in app.yaml change your app's id
+2. in appengine_app/settings.py change SECRET_KEY
+3. Run 
+    $ make deploy
