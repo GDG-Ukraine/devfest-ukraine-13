@@ -6,7 +6,7 @@ Live demo: [GDG DevFest Ukraine](http://devfest.gdg.org.ua/).
 
 ### Technical info
 
-Site is simple set of html pages build on top of django framework written in Python running on Google AppEngine. If you want set up server follow [INSTALL](https://github.com/GDG-Ukraine/devfest/blob/develop/INSTALL) guide. 
+Site is simple set of html pages build on top of django framework written in Python running on Google AppEngine. If you want set up server follow [INSTALL](https://github.com/GDG-Ukraine/devfest/blob/master/INSTALL) guide. 
 
 
 ### Contributors
