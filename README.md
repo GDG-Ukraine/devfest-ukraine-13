@@ -11,5 +11,6 @@ Site is simple set of html pages build on top of django framework written in Pyt
 
 ### Contributors
 * Design and markup: [bilenkuyboy](https://github.com/bilenkuyboy)
-* Content and final design: [zasadnyy](https://github.com/zasadnyy)
 * AppEngine integration: [kolyaflash](https://github.com/kolyaflash)
+* Content: [zasadnyy](https://github.com/zasadnyy)
+
