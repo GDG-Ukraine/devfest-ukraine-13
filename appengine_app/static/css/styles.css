@@ -140,6 +140,7 @@ body {
 #plusone_holder {
     position: relative;
     top: 12px;
+  	margin-left: 20px;
 }
 
 .footer-top {
