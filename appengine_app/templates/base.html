@@ -69,8 +69,6 @@
     </div>
 
 
-    <!-- Щоб повернути карусель на усі сторінки, в цей блок треба заіклюдити
-    темплейт каруселі (blocks/carousel.html) -->
     {% block carousel %}
     {% endblock %}
       
@@ -83,10 +81,11 @@
       <!-- START THE FEATURETTES -->
         {% block content %}{% endblock %}
       <!-- /END THE FEATURETTES -->
-      </div><!-- /.container -->
+        
+    </div><!-- /.container -->
 
 
-        <!-- SPEAKERS SECTION -->
+     <!-- SPEAKERS SECTION -->
 <!--        {% include "blocks/speackers.html" %}-->
      <!-- /SPEEKERS SECTION -->
 
@@ -121,6 +120,7 @@
     </script>
     <script>
       $(function() {
+                $('#plusgallery').plusGallery();
                 $( '#ri-grid' ).gridrotator( {
                     rows        : 3,
                     columns     : 15,
