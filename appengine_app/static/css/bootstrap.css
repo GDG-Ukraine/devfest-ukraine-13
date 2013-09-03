@@ -6848,11 +6848,11 @@ h4 {
 @media (min-width: 768px) and (max-width: 991px) {
  .navbar-brand {
 	position: relative;
-	left: 150%;
-	margin-bottom: 5px
+	left: 130%;
+    margin: -15px 0 2px;
 }
   .navbar-nav {
 	position: relative;
-	left: -7%;
+	left: -13%;
   }
 }

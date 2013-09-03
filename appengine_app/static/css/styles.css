@@ -193,6 +193,18 @@ body {
 	font-weight: 300;
 }
 
+@media (max-width: 480px) {
+  #plusone_holder {
+    float: left !important;
+  }
+  .footer-bottom p {
+    display: block;
+    width: 91.66666666666666%;
+    clear: both;
+    padding-top: 20px;
+  }
+}
+
 .social img {
 	width: 32px;
 }
