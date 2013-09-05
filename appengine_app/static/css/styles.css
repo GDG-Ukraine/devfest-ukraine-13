@@ -211,7 +211,7 @@ body {
 }
 
 .speakers > div{
-	margin: 40px 0 60px;
+	margin: 40px 0 -10px;
 }
 
 .speaker-text {
@@ -226,18 +226,16 @@ body {
 	margin: 20px 0;
 }
 
+.well {
+  margin-top: 50px;
+}
 
 @media (max-width: 480px) {
 	.speakers img {
 		width: 80px;
-/*
-		float: none;
-		left: 50%;
-*/
 	}
 	.speaker-text {
 		display: block;
-/*		clear: both;*/
 		margin-left: 90px;
 	}
 }
@@ -260,6 +258,7 @@ body {
 	font-weight: 400;
 	font-size: 0.9375em;
 	line-height: 1.375em;
+  min-height: 100px;
 }
 
 /* AGENDA SECTION
