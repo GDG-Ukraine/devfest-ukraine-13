@@ -39,6 +39,14 @@ def speakers(request):
     return render_to_response('pages/speakers.html', context,
                               context_instance=RequestContext(request))
 
+def team(request):
+    context = {
+        "active_menu": "team",
+    }
+
+    return render_to_response('pages/team.html', context,
+                              context_instance=RequestContext(request))
+
 
 def devfest2012(request):
     context = {

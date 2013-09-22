@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_title %}Команда &middot; GDG DevFest Ukraine 2013{% endblock %}
+
+{% block carousel %}
+    {% include "blocks/carousel.html" %}
+{% endblock %}
+
+{% block content %}
+    
+    <h1 id="speakers_header">Команда організаторів</h1>
+
+	  <div class="row speakers" >
+           
+          <div class="col-xs-12 col-sm-12 col-md-8 ">
+			 <div class="speaker-photo">
+			 	<img class="img-circle pull-left" src="{% static "images/speakers/vlad-ivanov.jpg" %}" alt="Vlad Ivanov">
+			 </div>
+			<div class="speaker-text">
+	          	<h3>Володимир Іванов</h3>
+				<h4>UA Developer Program associate, Google</h4>                
+                <h4>GDG Kyiv-Center coordinator</h4>
+				<p>Засновник першої Google Developers Group в Україні, Associate at Google.</p>
+			</div>
+		</div>
+          
+		 <div class="col-xs-12 col-sm-12 col-md-4 ">
+             <h3><br/></h3>
+			 <h5>Контакти</h5>
+			 <ul>
+                 <li>Google+: <a href="https://plus.google.com/101452311751271433713/about">gpuls.to/vlad</a></li>
+                 <li>email: <a href="mailto:vladimir@gdgroups.org">vladimir@gdgroups.org</a></li>
+             </ul>
+		</div>
+		
+	  </div>
+
+        <div class="row speakers" >
+           
+          <div class="col-xs-12 col-sm-12 col-md-8 ">
+			 <div class="speaker-photo">
+			 	<img class="img-circle pull-left" src="{% static "images/speakers/vitalik-zasadnyy.jpg" %}" alt="Vitalik Zasadnyy">
+			 </div>
+			<div class="speaker-text">
+	          	<h3>Віталік Засадний</h3>
+				<h4>GDG Lviv</h4>                
+				<p>Спів-засновник найактивнішої Google Developers групи в Україні, має досвід організації як невеликих івентів, хакатонів так і подій всеукраїнського маштабу.</p>
+			</div>
+		</div>
+          
+		 <div class="col-xs-12 col-sm-12 col-md-4 ">
+             <h3><br/></h3>
+			  <h5>Контакти</h5>
+			 <ul>
+                 <li>Google+: <a href="https://plus.google.com/102963345585524280596/about">gplus.to/zasadnyy</a></li>
+                 <li>Email: <a href="mailto:vitaliy.zasadnyy@gdg.org.ua">vitaliy.zasadnyy@gdg.org.ua</a></li>
+                 <li>Site: <a href="http://zasadnyy.org.ua/">zasadnyy.org.ua</a></li>    
+             </ul>
+		</div>
+		
+	  </div>
+
+    <div class="row speakers" >
+           
+          <div class="col-xs-12 col-sm-12 col-md-8 ">
+			 <div class="speaker-photo">
+			 	<img class="img-circle pull-left" src="{% static "images/speakers/oleh-zasadnyy.jpg" %}" alt="Oleh Zasadnyy">
+			 </div>
+			<div class="speaker-text">
+	          	<h3>Олег Засадний</h3>
+				<h4>GDG Lviv</h4>                
+				<p>Автор всієї графіки для GDG в Україні і не тільки. Фіналіст конкурсів дизайнів для Google I/O Extended 2013 та GDG DevFest Season 2013. Організатор TEDx Lviv.</p>
+			</div>
+		</div>
+          
+		 <div class="col-xs-12 col-sm-12 col-md-4 ">
+             <h3><br/></h3>
+			  <h5>Контакти</h5>
+			 <ul>
+                 <li>Google+: <a href="https://plus.google.com/102989169039151799851/about">gplus.to/ozasadnyy</a></li>
+                 <li>Email: <a href="mailto:oleh.zasadnyy@gdg.org.ua">oleh.zasadnyy@gdg.org.ua</a></li>
+             </ul>
+		</div>
+		
+	  </div>
+
+     
+	 	
+		
+      <hr class="featurette-divider">
+	  {% include "blocks/partners.html" %}
+
+{% endblock %}
