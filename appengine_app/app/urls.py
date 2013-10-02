@@ -18,4 +18,5 @@ urlpatterns = patterns(
     url(r'^summit/$', 'app.views.summit', name='summit'),
     url(r'^hackathon/$', 'app.views.hackathon', name='hackathon'),
     url(r'^conference/$', 'app.views.conference', name='conference'),
+    url(r'^registration/$', 'app.views.registration', name='registration'),
 )

@@ -76,3 +76,10 @@ def conference(request):
     }
     return render_to_response('pages/conference.html', context,
                               context_instance=RequestContext(request))
+
+def registration(request):
+    context = {
+        "active_menu": "none",
+    }
+    return render_to_response('pages/registration.html', context,
+                              context_instance=RequestContext(request))
