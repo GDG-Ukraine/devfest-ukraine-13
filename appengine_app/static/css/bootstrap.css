@@ -773,8 +773,10 @@ pre code {
 }
 
 .row {
+/*
   margin-right: -15px;
   margin-left: -15px;
+*/
 }
 
 .row:before,
@@ -4072,8 +4074,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-collapse {
   max-height: 340px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-left: 100px;
   overflow-x: visible;
 /*  border-top: 1px solid transparent;*/
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
