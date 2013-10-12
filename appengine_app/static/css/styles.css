@@ -333,6 +333,15 @@ h2.day:nth-child(1) {
 /*	border-radius: 3px;*/
 }
 
+.cbp_tmtimeline > li .alternate {
+	border:none;
+}
+.alternate [class^="stream"] {
+	width: 30.7%;
+	min-width: 110px;
+	min-height: 80px;
+}
+
 [class^="stream"]:hover {
   box-shadow: 0 2px 4px #aaa;
 }
@@ -346,6 +355,33 @@ h2.day:nth-child(1) {
 	font-style: italic;
 	display: block;
 	margin-top: 5px;
+}
+
+[class^="stream"]:after {
+  position:absolute;
+  font-size:.9rem;
+  top:1.0rem;
+  right:1.02rem;
+  content:"";
+  color:gray;
+  width:1rem;
+  line-height:1rem;
+  text-align:right;
+  pointer-events:none;
+}
+
+.en:after {
+	content:"EN";
+}
+
+.ukr:after {
+	content:"UKR";
+	right:1.82rem;
+}
+
+.rus:after {
+	content:"RUS";
+	right:1.82rem;
 }
 
 .cbp_tmtimeline > li .cbp_tmlabel h3 {
