@@ -2361,6 +2361,7 @@ input[type="button"].btn-block {
 
 .fade {
   opacity: 0;
+  outline: none;
   -webkit-transition: opacity 0.15s linear;
           transition: opacity 0.15s linear;
 }
@@ -6865,6 +6866,6 @@ h4 {
 
 @media (max-height: 320px) {
  	.modal-dialog {
-	  padding-top: 3%;
+	  padding-top: 10px;
 	}
 }

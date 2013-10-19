@@ -361,13 +361,13 @@ h2.day:nth-child(1) {
 }
 
 [class^="stream"] span {
-	font-size: 0.6em;
+	font-size: 0.5em;
 	font-style: italic;
 	display: block;
 	margin-top: 5px;
 }
 
-.eng:after, .ukr:after, .rus:after {
+.en:after, .ukr:after, .rus:after {
   position:absolute;
   font-size:.9rem;
   top:1.0rem;
@@ -380,9 +380,8 @@ h2.day:nth-child(1) {
   pointer-events:none;
 }
 
-.eng:after {
-	content:"ENG";
-    right:1.82rem;
+.en:after {
+	content:"EN";
 }
 
 .ukr:after {
@@ -420,20 +419,34 @@ h2.day:nth-child(1) {
 .stream-0 {
 	width: 97%;
 	min-height: 150px;
-	border-top: 7px solid #808080;
+	border-top: 7px solid #c7c7c7;
 }
 
+/* Android */
 .stream-1 {
-	border-top: 7px solid #0F9D58;
+	border-top: 7px solid #99cc00;
 }
 
+/* Web */
 .stream-2 {
-	border-top: 7px solid #4285F4;
+	border-top: 7px solid #3366cc;
 }
 
+/* GDG[x] */
 .stream-3 {
-	border-top: 7px solid #D84437;
+	border-top: 7px solid #ff8800;
 }
+
+/* Glass */
+.stream-4 {
+	border-top: 7px solid #47b7e6;
+}
+
+/* Google Ads */
+.stream-5 {
+	border-top: 7px solid #cc0000;
+}
+
 
 @media (max-width: 1200px) {
  	[class^="stream"] {
@@ -451,9 +464,9 @@ h2.day:nth-child(1) {
 		font-size: 1.05em;
 	}
 	.alternate [class^="stream"] {
-		width: 32%;
-		font-size: 0.7em;
-		min-width: 70px;
+		width: 48%;
+		font-size: 0.75em;
+		min-width: 100px;
 		min-height: 60px;
 	}
 }
