@@ -10,6 +10,18 @@
 {% block content %}
     <div class="row">
         
+        <div class="col-xs-12 col-sm-12 col-md-7">
+            <h3 style="margin-top: 0px;">Завантажуйте додаток з розкладом фестивалю для Android</h3>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-3">
+            <a href="https://play.google.com/store/apps/details?id=ua.org.gdg.devfest.iosched" >
+                <img alt="Get it on Google Play" src="https://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
+            </a>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-1" >
+            <img src="http://qrfree.kaywa.com/?l=1&s=8&d=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dua.org.gdg.devfest.iosched" alt="QRCode"height="60px" width="60px">
+        </div>
+        
         <div class="col-xs-12 col-sm-12 col-md-11">
             
                 <ul class="cbp_tmtimeline">
@@ -23,18 +35,18 @@
 								Старт AndroidHot Hackathon'у
                                 <span>Офіс Cicklum, 20 поверх</span>
 							</h2>
-                        	<a href="/hackathon">Деталі...</a>
+                        	<a href="/hackathon#android">Деталі...</a>
                     	</div>
                     </div>
                    
                     <div class="cbp_tmlabel">
-                        <h3>11:00 - 16:00</h3>
+                        <h3>10:00 - 16:00</h3>
 						<div class="stream-0">
                         	<h2>
-								AngularJSabbath Hackathon
+								AngularJ-Sabbath Hackathon
                                 <span>Офіс DataArt</span>
 							</h2>
-                        	<a href="/hackathon">Деталі...</a>
+                        	<a href="/hackathon#angular">Деталі...</a>
                     	</div>
                     </div>
                     
@@ -45,7 +57,7 @@
 								Техтолк з Еріком Лафортюн
                                 <span>Офіс GlobalLogic</span>
 							</h2>
-                        	<a href="/hackathon">Деталі...</a>
+                        	<a href="/hackathon#techtalk">Деталі...</a>
                     	</div>
                     </div>
                     
@@ -57,6 +69,17 @@
                                 <span>Офіс Cicklum, 20 поверх</span>
 							</h2>
                         	<a href="/hackathon">Деталі...</a>
+                    	</div>
+                    </div>
+                    
+                     <div class="cbp_tmlabel">
+                        <h3>20:00 - 22:00</h3>
+						<div class="stream-0">
+                        	<h2>
+								Cаміт лідерів GDG
+                                <span>Офіс GlobalLogic</span>
+							</h2>
+                        	<a href="/summit">Деталі...</a>
                     	</div>
                     </div>
                     
@@ -107,7 +130,7 @@
                     <div class="cbp_tmlabel">
 						<h3>09:30 - 10:30</h3>
                         <div class="stream-0">
-							<h2>Keynote</h2>
+							<h2>Відкриття. Привітання. Keynote</h2>
 						</div>
                     </div>
                 </li>
@@ -171,7 +194,7 @@
 								<span>Ігор Пащенко (Strategic Partner Manager, Google)</span>
 							</h2>
                             <a data-toggle="modal" href="#modal-6">
-								TBD
+								Як найкраще заробляти на мобільних додатках - практичні поради, приклади розробників та розширені рекламні можливості. 
 							</a>
                     	</div>
 						<div class="stream-2">
@@ -230,7 +253,7 @@
 							</h2>
 							<hr>
 							<h2> 
-                                Презентація Google Glass
+                                Досвід використання Google Glass
 								<span>Олексій Ісаченко (Leader, GDG Moscow)</span>
 							</h2>
 						</div>
@@ -349,7 +372,7 @@
                     <div class="cbp_tmlabel">
 						<h3>17:50 - 18:30</h3>
                         <div class="stream-0">
-							<h2>GDG Ukraine Awards. Закриття DevFest-у.</h2>
+							<h2>GDG Ukraine Awards. Нагородження переможців хакатонів. Спільне фото на згадку. Закриття DevFest-у.</h2>
 						</div>
                     </div>
                 </li>
@@ -357,9 +380,7 @@
             
         </div>
         
-        <hr class="featurette-divider">
-        
-        <div>
+        <div> 
                             
             
                           <div class="modal fade" id="modal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -448,7 +469,7 @@
 									  </div>
 									  <div class="modal-body">
 										
-                                            <p>TBD</p>
+                                            <p>Як найкраще заробляти на мобільних додатках - практичні поради, приклади розробників та розширені рекламні можливості. </p>
 								        
 									  </div>
 									</div><!-- /.modal-content -->
@@ -720,7 +741,9 @@
             
             
     </div>
-    
+<!--                <hr class="featurette-divider">-->
+    </div>
+
       
 
       {% include "blocks/partners.html" %}
