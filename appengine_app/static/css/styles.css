@@ -454,6 +454,10 @@ h2.day:nth-child(1) {
 	margin: 10px 0;
 }
 
+.presentation a {
+    vertical-align: bottom;
+}
+
 .presentation img {
 	max-width: 18px;
 	max-height: 18px;
