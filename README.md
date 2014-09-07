@@ -2,7 +2,7 @@
 
 Site created for DevFest Season 2013 by GDG Ukraine Team.
 
-Live demo: [GDG DevFest Ukraine](http://devfest.gdg.org.ua/).
+Live demo: [GDG DevFest Ukraine](http://gdg-devfest-ua.appspot.com/).
 
 ### Technical info
 
